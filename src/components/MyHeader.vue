@@ -1,49 +1,46 @@
 <template>
-  <header class="text-uppercase">
+<header class="text-uppercase">
 
     <div class="nav-bar d-flex align-items-center">
         <!--BTN -->
         <button type="button" class="btn text-white text-uppercase">order online</button>
         <!-- Nav CENTRE -->
         <ul>
-          <li>
-              <a href="#" class="li-svg ">
-                  <img class="filter-white" src="../assets/svg/svg-0.svg" alt=""> home
+        <li>
+            <a href="#" class="li-svg ">
+                <img class="filter-white" src="../assets/svg/svg-0.svg" alt=""> home
                 </a>
             </li>
             <li><a href="#">pages</a></li>
             <li><a href="#">menu</a></li>
 
             <li>
-              <a href="#" id="header-logo" >
-                  <img src="../assets/img/h5-logo-divided-header.png" alt="logo-header">
-              </a>
+                <a href="#" id="header-logo" >
+                    <img src="../assets/img/h5-logo-divided-header.png" alt="logo-header">
+                </a>
             </li>
 
             <li><a href="#">event</a></li>
             <li><a href="#">blog</a></li>
             <li><a href="#" class="active" >landing</a></li>
         </ul>
-          <!-- Nav DX -->
-          <ul>
+            <!-- Nav DX -->
+        <ul>
             <li>
                 <a href="#" class="li-svg">
-                  <span>0</span>
-                  <img class="filter-white" src="../assets/svg/svg-1.svg" alt="cart"> 
-                  cart
+                    <span>0</span>
+                    <img class="filter-white" src="../assets/svg/svg-1.svg" alt="cart">cart
                 </a>
             </li>
             <li>
                 <a href="#" class="li-svg">
-                  <i class="fas fa-search"></i>
-                  search
+                    <i class="fas fa-search"></i>search
                 </a>
             </li>
-          </ul>
-      </div>¢
-      <!--  Section Jumbotron-->
-       
-  </header>
+        </ul>
+    </div>
+    <!--  Section Jumbotron-->
+    </header>
 </template>
 
 <script>
