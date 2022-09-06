@@ -3,6 +3,7 @@
     <MyHeader :navLeftLink='navLeftLink' :navRightlink='navRightLink'/>
     <MyMain/>
     <SpecialCombo/>
+    <BuildYourPizza/>
     <MyFooter/>
   </div>
 </template>
@@ -11,6 +12,7 @@
 import MyHeader from './components/MyHeader.vue';
 import MyMain from './components/MyMain.vue';
 import SpecialCombo from './components/SpecialCombo.vue';
+import BuildYourPizza from './components/BuildYourPizza.vue';
 import MyFooter from './components/MyFooter.vue';
 
 export default {
@@ -18,8 +20,9 @@ export default {
   components: {
     MyHeader,
     MyMain,
-    MyFooter,
     SpecialCombo,
+    MyFooter,
+    BuildYourPizza,
   },
   data(){
     return{     
