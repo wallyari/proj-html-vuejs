@@ -2,6 +2,7 @@
   <div id="app">
     <MyHeader :navLeftLink='navLeftLink' :navRightlink='navRightLink'/>
     <MyMain/>
+    <SpecialCombo/>
     <MyFooter/>
   </div>
 </template>
@@ -9,6 +10,7 @@
 <script>
 import MyHeader from './components/MyHeader.vue';
 import MyMain from './components/MyMain.vue';
+import SpecialCombo from './components/SpecialCombo.vue';
 import MyFooter from './components/MyFooter.vue';
 
 export default {
@@ -16,7 +18,8 @@ export default {
   components: {
     MyHeader,
     MyMain,
-    MyFooter
+    MyFooter,
+    SpecialCombo,
   },
   data(){
     return{     
