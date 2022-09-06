@@ -6,8 +6,30 @@
         <button type="button" class="btn text-white text-uppercase">order online</button>
         <!-- Nav CENTRE -->
         <ul>
-        <li>
-            <a href="#" class="li-svg ">
+        <!-- nav-sinistra     -->
+            <li>
+                <li v-for="leftLink in navLeftLink" :key="leftLink">
+
+                <a href="#" class="li-svg">
+                {{leftLink}}
+                </a>
+
+            </li>
+
+            <li>
+                <a href="#" id="header-logo" >
+                <img src="../assets/img/h5-logo-divided-header.png" alt="logo-navbar">
+                </a>
+            </li>
+
+            <li v-for="rightLink in navRightLink" :key="rightLink">
+
+                <a href="#" class="li-svg">
+                {{rightLink}}
+                </a>
+
+            </li>
+            <!-- <a href="#" class="li-svg ">
                 <img class="filter-white" src="../assets/svg/svg-0.svg" alt=""> home
                 </a>
             </li>
@@ -16,13 +38,13 @@
 
             <li>
                 <a href="#" id="header-logo" >
-                    <img src="../assets/img/h5-logo-divided-header.png" alt="logo-header">
+                    <img src="../assets/img/h5-logo-divided-header.png" alt="logo-navbar">
                 </a>
             </li>
 
             <li><a href="#">event</a></li>
             <li><a href="#">blog</a></li>
-            <li><a href="#" class="active" >landing</a></li>
+            <li><a href="#" class="active" >landing</a></li> -->
         </ul>
             <!-- Nav DX -->
         <ul>
@@ -51,7 +73,23 @@
 
 <script>
 export default {
-    name:'MyHeader'
+    name:'MyHeader',
+    data(){
+        return{
+            navLeftLink:[
+                "home",
+                "pages",
+                "menu",
+            ],
+            navRightLink:[
+                "event",
+                "blog",
+                "landing",
+
+            ],
+        }
+        
+    }
 }
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <MyHeader/>
+    <MyHeader :navLeftLink='navLeftLink' :navRightlink='navRightLink'/>
     <MyMain/>
     <MyFooter/>
   </div>
@@ -19,8 +19,7 @@ export default {
     MyFooter
   },
   data(){
-    return{
-     
+    return{     
     }
   },
 }
