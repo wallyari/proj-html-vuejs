@@ -1,30 +1,30 @@
 <template>
     <div class="jumbotron">
 
-<!-- jumbo pictures -->
-      <div class="jumbotron-main d-flex">
-          <img src="../assets/img/h3-img-1.jpg" alt="">
-          <img src="../assets/img/h3-img-2.jpg" alt="">
-          <img src="../assets/img/h3-img-3.jpg" alt="">
-          <img src="../assets/img/h3-img-4.jpg" alt="">
-      </div>
+<!-- JUMBO IMG -->
+    <div class="jumbotron-main d-flex">
+        <img src="../assets/img/h3-img-1.jpg" alt="">
+        <img src="../assets/img/h3-img-2.jpg" alt="">
+        <img src="../assets/img/h3-img-3.jpg" alt="">
+        <img src="../assets/img/h3-img-4.jpg" alt="">
+    </div>
 
-<!-- jumbo testimonial -->
+<!-- JUMBO QUOTE -->
 
-      <div class="jumbotron-quote">
-          <div class="jumbotron-quote-text text-uppercase">
-              <i class="fas fa-quote-left"></i>
-              <h4>
+    <div class="jumbotron-quote">
+        <div class="jumbotron-quote-text text-uppercase">
+            <i class="fas fa-quote-left"></i>
+            <h4>
                 "forget the trendy pizza shops. this hidden spot makes the best new <br> york-style pizza slice in naples"
-              </h4>
-              <p>
+            </h4>
+            <p>
                 washington post 2018
-              </p>
+            </p>
             </div>
 
             <div class="jumbotron-quote-logo">
-            <img src="../assets/svg/svg-4.svg" alt="pizza cursore">
-          </div>
+            <img src="../assets/svg/svg-4.svg" alt="">
+        </div>
     </div>
 
     </div>

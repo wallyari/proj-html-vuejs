@@ -5,6 +5,7 @@
     <SpecialCombo/>
     <BuildYourPizza/>
     <DonPeppeStaff/>
+    <ChooseFlavor/>
     <MyFooter/>
   </div>
 </template>
@@ -15,6 +16,7 @@ import MyMain from './components/MyMain.vue';
 import SpecialCombo from './components/SpecialCombo.vue';
 import BuildYourPizza from './components/BuildYourPizza.vue';
 import DonPeppeStaff from './components/DonPeppeStaff.vue';
+import ChooseFlavor from './components/ChooseFlavor.vue';
 import MyFooter from './components/MyFooter.vue';
 
 export default {
@@ -25,6 +27,7 @@ export default {
     SpecialCombo,
     BuildYourPizza,
     DonPeppeStaff,
+    ChooseFlavor,
     MyFooter,
   },
   data(){
