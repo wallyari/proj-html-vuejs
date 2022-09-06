@@ -4,6 +4,7 @@
     <MyMain/>
     <SpecialCombo/>
     <BuildYourPizza/>
+    <DonPeppeStaff/>
     <MyFooter/>
   </div>
 </template>
@@ -13,6 +14,7 @@ import MyHeader from './components/MyHeader.vue';
 import MyMain from './components/MyMain.vue';
 import SpecialCombo from './components/SpecialCombo.vue';
 import BuildYourPizza from './components/BuildYourPizza.vue';
+import DonPeppeStaff from './components/DonPeppeStaff.vue';
 import MyFooter from './components/MyFooter.vue';
 
 export default {
@@ -21,8 +23,9 @@ export default {
     MyHeader,
     MyMain,
     SpecialCombo,
-    MyFooter,
     BuildYourPizza,
+    DonPeppeStaff,
+    MyFooter,
   },
   data(){
     return{     

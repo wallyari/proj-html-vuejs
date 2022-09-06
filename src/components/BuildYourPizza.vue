@@ -8,13 +8,15 @@
         we wont <br>
         Judge
     </h3>
-
+    <!-- Top -->
     <div class="bg-top-left"></div>
     <div class="bg-top-mid"></div>
     <div class="bg-top-right"></div>
+    <!-- mid -->
     <div class="bg-mid-left"></div>
     <div class="bg-mid-mid"></div>
     <div class="bg-mid-right"></div>
+    <!-- mid -->
     <div class="bg-low-left"></div>
     <div class="bg-low-mid"></div>
     <div class="bg-low-right"></div>
