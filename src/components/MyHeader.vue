@@ -39,7 +39,13 @@
             </li>
         </ul>
     </div>
-    <!--  Section Jumbotron-->
+    
+    <!--  Section Jumbotron Header-->
+    <div class="jumbotron-header">
+        <img src="../assets/img/h3-rev-img-5.png" alt="" class="jumbo-urban">
+        <img src="../assets/img/h3-rev-img-6.png" alt="" class="jumbo-urban-tastes">
+    </div>   
+
     </header>
 </template>
 
@@ -58,7 +64,7 @@ header{
     width: 100vw;
     background-color: $bg-header;
 }
-
+//NAVBAR HEADER
 #header-logo img{
     width: 100px;
 }
@@ -102,7 +108,7 @@ ul li a:hover{
 
 // To change any SVGs color 
 .filter-white{
-      filter: invert(100%);
+    filter: invert(100%);
     }
 
 .li-svg span{
@@ -124,4 +130,18 @@ ul li a:hover{
     border-radius: 0;
     background-color: $bg-btn-header;
 }
+//JUMBOTRON HEADER
+.jumbotron-header{
+    width: 45%;
+    height: calc(500px - 100px - 30px);
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.jumbo-urban-tastes{
+    margin-left: -63%;
+}
+
+
 </style>

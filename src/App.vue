@@ -29,7 +29,6 @@ export default {
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap.scss";
 @import '~@fortawesome/fontawesome-free/css/all.css';
-@import './assets/style/variables.scss'
-
+@import './assets/style/variables.scss';
 
 </style>
