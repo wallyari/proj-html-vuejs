@@ -1,136 +1,124 @@
 <template>
-    <!-- Bg IMG + logo -->
-    <div class="specials d-flex">
-        <div class="specials-combo-img">
-            <img src="../assets/img/h1-img-7n.png" alt="">
-        </div>
-        <div class="specials-pizza">
-
-    <!-- Specials Combo Menu-->
-    <div class="specials-pizza text-uppercase">
-
-        <div class="specials-pizza-title">
-            <h3>specials*</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-
-        <div class="pizza pizza-combo-p">
-            <h4 class="price">
-                $10
-            </h4>
-            <h4 class="name">
-                combo piccolo
-            </h4>
-        </div>
-        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Aperiam excepturi hic quos!</span>
-
-        <div class=" pizza pizza-combo-m">
-            <h4 class="price">
-                $20
-            </h4>
-            <h4 class="name">
-                combo medium
-            </h4>
-        </div>
-        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Aperiam excepturi hic quos!</span>
-
-        <div class="pizza pizza-combo-g">
-            <h4 class="price">
-                $30
-            </h4>
-            <h4 class="name">
-                combo grande
-            </h4>
-        </div>
-        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Aperiam excepturi hic quos!</span>
-    </div>
-
-
-
-
+<div class="special d-flex">
+    <!-- LOGO & BG SX -->
+    <div class="box">
+        <div class="img-box">
+        <img class="bg-special" src="../assets/img/h1-img-4.jpg" alt="" />
+        <img class="logo-special" src="../assets/img/h1-img-7n.png" alt="" />
         </div>
     </div>
+
+    <!-- BOX DX -->
+    <div class="combo-list d-flex justify-content-center align-items-center">
+        <div class="combo-box">
+        <h1 class="title text-uppercase">specials*</h1>
+        <div class="special-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+        <div>
+            <h3 class="subtitle text-uppercase">
+            <span class="price">$10</span> combo piccolo
+            </h3>
+            <ul>
+                <li class="description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Aperiam excepturi hic quos!
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="subtitle text-uppercase">
+                <span class="price">$20</span> combo medium
+            </h3>
+        <ul>
+            <li class="description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Aperiam excepturi hic quos!
+                </li>
+        </ul>
+        </div>
+            <div>
+                <h3 class="subtitle text-uppercase">
+                <span class="price">$30</span> combo grande
+                </h3>
+                <ul>
+                    <li class="description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Aperiam excepturi hic quos!
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 </template>
 
 <script>
 export default {
-    name: 'SpecialCombo',
-    components: {
-
-    }
-}
+name: "SpecialCombo",
+};
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/style/variables.scss";
 
-@import '../assets/style/variables.scss';
-
-.specials{
-    height: 600px;
-    width: 90vw;
-    background-color: white;
-    padding: 10px;
-}
-
-.specials-combo-img{
-    background-image: url('../assets/img/h1-img-4.jpg');
-    background-size: cover;
+.special  {
+padding: 8 0;
+.box,
+  .combo-list{
     width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-
-//Special Combo text section
-.specials-pizza{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 40%;
-    margin: 0 auto;
+.img-box {
+    width: 100%;
+    height: 100%;
     position: relative;
+    img {
+    width: 100%;
+    }
+    .bg-special {
+    height: 100%;
+    }
+    .logo-special {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
 }
+.combo-list{
+    .combo-box {
+    width: 60%;
+    .title {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .subtitle {
+        font-weight: 400;
+        padding-bottom: 3px;
+    }
+    .price {
+        font-weight: 400;
+        color: #D2401E;
+        padding-right: 10px;
+    }
+    .special-description {
+        padding: 2px 0 30px;
+    }
+    .special-description,
+    .description {
+        font-weight: 400;
+        width: 76%;
+        color: #D2401E;
+        letter-spacing: 1px;
+    }
+    ul {
+        list-style-type: none;
+        li {
+        padding-left: 40px;
+        font-size: 15px;
+        padding-bottom: 19px;
 
-.specials-pizza span{
-    color: rgb(118, 114, 114);
-    font-size: 10px;
-    text-transform: lowercase;
-    margin-left: 130px;
+        }
+        }
+    }
+    }
 }
-
-.specials-pizza-title p{
-    color: rgb(118, 114, 114);
-    font-size: 10px;
-    text-transform: lowercase;
-}
-
-.specials-pizza-title{
-    text-align: left;
-    margin-left: 10px;
-}
-
-.pizza{
-    display: flex;
-    margin-top: 10px;
-}
-
-
-
-.pizza .price{
-    color: $color-quote-newspaper;
-    margin-right: 15px;
-}
-
-.jumbo-menu-logo img{
-    background-color: white;
-    padding: 11px 15px;
-    border-radius: 50%;
-    cursor: pointer;
-    transform: translateY(800%);   
-    margin-right: 20px;
-}
-
-
-
 </style>

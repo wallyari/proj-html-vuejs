@@ -1,7 +1,7 @@
 <template>
 <header class="text-uppercase">
 
-    <div class="nav-bar d-flex align-items-center">
+    <div class="nav-bar d-flex justify-content-center align-items-center ">
         <!--BTN -->
         <button type="button" class="btn text-white text-uppercase">order online</button>
         <!-- Nav CENTRE -->
@@ -47,7 +47,7 @@
             <li><a href="#" class="active" >landing</a></li> -->
         </ul>
             <!-- Nav DX -->
-        <ul>
+        <ul class="cart-search-box">
             <li>
                 <a href="#" class="li-svg">
                     <span>0</span>
@@ -64,8 +64,10 @@
     
     <!--  Section Jumbotron Header-->
     <div class="jumbotron-header">
-        <img src="../assets/img/h3-rev-img-5.png" alt="" class="jumbo-urban">
-        <img src="../assets/img/h3-rev-img-6.png" alt="" class="jumbo-urban-tastes">
+        <div class="img-box d-flex justify-content-center align-items-center">
+        <img class="jumbo-urban" src="../assets/img/h3-rev-img-5.png" alt="">
+        <img class="jumbo-urban-tastes" src="../assets/img/h3-rev-img-6.png" alt="" >
+        </div>
     </div>   
 
     </header>
@@ -111,30 +113,40 @@ header{
     height: 100px;
     width: 70%;
     margin: 0 auto;
-    justify-content: space-between;
     line-height: 65px;
     margin-bottom: 30px;
-}
 
-.nav-bar  ul li{
+    ul{
+    display: flex;
+    padding-top: 20px;
+    }
+    
+    ul li{
     list-style: none;
     padding: 0 10px;
     font-size: 12px;
-}
-
-.nav-bar  ul li a{
+    }
+    
+    a{
     text-decoration: none;
     color: white;
+    }
+    
+    .btn{
+    font-size: 10px;
+    height: 30px;
+    width: 110px;
+    border-radius: 0;
+    background-color: $bg-btn-header;
+    }
+
 }
+
 
 ul li a:hover{
     color: $hover-li-navbar;
 }
 
-.nav-bar  ul{
-    display: flex;
-    padding-top: 20px;
-}
 
 .active{
     color: $hover-li-navbar !important;
@@ -142,6 +154,7 @@ ul li a:hover{
 
 .li-svg img{
     width: 20px;
+    
 }
 
 // To change any SVGs color 
@@ -161,25 +174,31 @@ ul li a:hover{
 }
 
 
-.nav-bar .btn{
-    font-size: 10px;
-    height: 30px;
-    width: 110px;
-    border-radius: 0;
-    background-color: $bg-btn-header;
-}
 //JUMBOTRON HEADER
-.jumbotron-header{
-    width: 45%;
-    height: calc(500px - 100px - 30px);
-    margin: 0 auto;
-    display: flex;
-    padding-bottom: 40px;
+.jumbotron-header {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .img-box {
+    padding: 15pxm 0;
+    
+    .jumbo-urban {
+        width: 40%;
+        }
+    .jumbo-urban-tastes{
+        width: 12%;
+        position: absolute;
+        top: 53%;
+        left: 50%;
+        transform: translate(-50%, -50%);   
+
+    }    
+            
+            
+        }
 }
 
-.jumbo-urban-tastes{
-    margin-left: -63%;
-}
+
 
 
 </style>

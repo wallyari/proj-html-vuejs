@@ -1,11 +1,13 @@
 <template>
   <div id="app">
-    <MyHeader :navLeftLink='navLeftLink' :navRightlink='navRightLink'/>
+    <MyHeader/>
     <MyMain/>
     <SpecialCombo/>
     <BuildYourPizza/>
     <DonPeppeStaff/>
     <ChooseFlavor/>
+    <PizzaDeals/>
+    
     <MyFooter/>
   </div>
 </template>
@@ -17,6 +19,7 @@ import SpecialCombo from './components/SpecialCombo.vue';
 import BuildYourPizza from './components/BuildYourPizza.vue';
 import DonPeppeStaff from './components/DonPeppeStaff.vue';
 import ChooseFlavor from './components/ChooseFlavor.vue';
+import PizzaDeals from './components/PizzaDeals.vue';
 import MyFooter from './components/MyFooter.vue';
 
 export default {
@@ -28,6 +31,7 @@ export default {
     BuildYourPizza,
     DonPeppeStaff,
     ChooseFlavor,
+    PizzaDeals,
     MyFooter,
   },
   data(){
