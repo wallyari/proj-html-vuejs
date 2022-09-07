@@ -7,12 +7,12 @@
         </div>
         <span>for</span>
         <div>
-            <input type="text" placeholder="11/29/2020" />
+            <input type="text" placeholder="07/09/2021" />
             <i class="far fa-calendar"></i>
         </div>
         <span>at</span>
         <div>
-            <input type="text" placeholder="7:00 pm" />
+            <input type="text" placeholder="18:00 pm" />
             <i class="far fa-clock"></i>
         </div>
         <span></span>
