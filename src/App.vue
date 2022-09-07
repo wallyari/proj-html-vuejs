@@ -7,6 +7,7 @@
     <DonPeppeStaff/>
     <ChooseFlavor/>
     <PizzaDeals/>
+    <BookTable/>
     
     <MyFooter/>
   </div>
@@ -20,6 +21,7 @@ import BuildYourPizza from './components/BuildYourPizza.vue';
 import DonPeppeStaff from './components/DonPeppeStaff.vue';
 import ChooseFlavor from './components/ChooseFlavor.vue';
 import PizzaDeals from './components/PizzaDeals.vue';
+import BookTable from './components/BookTable.vue';
 import MyFooter from './components/MyFooter.vue';
 
 export default {
@@ -32,6 +34,7 @@ export default {
     DonPeppeStaff,
     ChooseFlavor,
     PizzaDeals,
+    BookTable,
     MyFooter,
   },
   data(){
