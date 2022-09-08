@@ -1,17 +1,6 @@
 <template>
-    <div class="jumbotron">
-
-<!-- JUMBO IMG -->
-    <div class="jumbotron-main d-flex">
-        <img src="../assets/img/h3-img-1.jpg" alt="">
-        <img src="../assets/img/h3-img-2.jpg" alt="">
-        <img src="../assets/img/h3-img-3.jpg" alt="">
-        <img src="../assets/img/h3-img-4.jpg" alt="">
-    </div>
-
 <!-- JUMBO QUOTE -->
-
-    <div class="jumbotron-quote">
+ <div class="jumbotron-quote">
         <div class="jumbotron-quote-text text-uppercase">
             <i class="fas fa-quote-left"></i>
             <h4>
@@ -25,36 +14,19 @@
             <div class="jumbotron-quote-logo">
             <img src="../assets/svg/svg-4.svg" alt="">
         </div>
-    </div>
-
-    </div>
+    </div>  
 </template>
-
 
 <script>
 export default {
-    name: 'MyMain',
-    components: {
-       
-    }
+    name:"QuoteSection",
+
 }
 </script>
 
 <style lang="scss" scoped>
-
 @import '../assets/style/variables.scss';
-
-.jumbotron-main{
-    width: 100vw;
-    background-color: white;
-    padding: 3px 0;
-}
-
-.jumbotron-main img{
-    width: 25%;
-    padding: 5px;
-}
-
+//QUOTE (components)
 .jumbotron-quote{
     background-image: url('../assets/img/h3-testimonials-bckgrnd.jpg');
     height: 350px;
@@ -73,6 +45,7 @@ export default {
 }
 
 .jumbotron-quote-logo{
+    width: 3%;
     height: 10%;
     text-align: right;
     margin-top: -20px;
@@ -101,5 +74,9 @@ export default {
     color: $color-quote-newspaper;
     font-size: 12px;
 }
+
+
+
+
 
 </style>

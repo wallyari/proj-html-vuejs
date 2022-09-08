@@ -60,7 +60,7 @@ name: "SpecialCombo",
 @import "../assets/style/variables.scss";
 
 .special  {
-padding: 8 0;
+padding: 8px 0;
 .box,
   .combo-list{
     width: 50%;
@@ -110,12 +110,10 @@ padding: 8 0;
         letter-spacing: 1px;
     }
     ul {
-        list-style-type: none;
         li {
         padding-left: 40px;
         font-size: 15px;
         padding-bottom: 19px;
-
         }
         }
     }

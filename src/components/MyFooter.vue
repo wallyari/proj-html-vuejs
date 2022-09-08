@@ -16,7 +16,7 @@
           <!-- WORKING HOURS -->
           <div class="working-hours">
             <h4 class="text-uppercase">working hours</h4>
-            <ul v-for="(info, i) in infoArray" :key="`id2-${i}`">
+            <ul v-for="(info, indice) in infoArray" :key="indice">
               <li class="day text-uppercase">
                 {{ info.day }}<span v-show="info.check">*</span>
               </li>
@@ -26,7 +26,7 @@
                 {{ info.workingHours }}
               </li>
             </ul>
-
+            <!-- Social -->
             <ul class="socials d-flex">
               <h4 class="text-uppercase">Follow Us:</h4>
               <li>
@@ -110,7 +110,7 @@ export default {
           check: false,
         },
         {
-          day: "tuesady until friday",
+          day: "tuesday until friday",
           workingHours: "9:00 - 22:00",
           check: false,
         },
@@ -163,6 +163,9 @@ footer {
           font-weight: 300;
           letter-spacing: 1px;
         }
+        .restaurants{
+
+        }
         .working-hours {
           ul {
 
@@ -203,7 +206,7 @@ footer {
         bottom: 7%;
         left: 5%;
         font-size: 13px;
-        color: $bg-header;
+        color: white;
         font-weight: 300;
         letter-spacing: 1px;
         .sig-color {
@@ -220,7 +223,7 @@ footer {
 }
   }
 
-// per passaggio
+// per passaggio classe
 .shopClosed {
   color: white;
 }

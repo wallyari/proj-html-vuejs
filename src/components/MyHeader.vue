@@ -95,7 +95,8 @@ export default {
 }
 </script>
 
-<style lang="scss" >
+
+<style lang="scss" scoped>
 
 @import "../assets/style/variables.scss";
 
@@ -126,6 +127,10 @@ header{
     padding: 0 10px;
     font-size: 12px;
     }
+
+    ul li a:hover{
+    color: $hover-li-navbar;
+}
     
     a{
     text-decoration: none;
@@ -143,9 +148,6 @@ header{
 }
 
 
-ul li a:hover{
-    color: $hover-li-navbar;
-}
 
 
 .active{
@@ -171,16 +173,20 @@ ul li a:hover{
     z-index: 3;
     position: relative;
     padding: 2px 5px;
+    
+    img{
+    width: 20px;
+    
+}
 }
 
 
 //JUMBOTRON HEADER
 .jumbotron-header {
     position: relative;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 17px;
     .img-box {
-    padding: 15pxm 0;
+    padding: 10px 0;
     
     .jumbo-urban {
         width: 40%;
@@ -188,7 +194,7 @@ ul li a:hover{
     .jumbo-urban-tastes{
         width: 12%;
         position: absolute;
-        top: 53%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);   
 
